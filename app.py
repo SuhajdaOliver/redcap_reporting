@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 from redcap_api import kitoltottseg
 
-st.title("API lekérdező")
+st.title("Redcap reporting")
 
 api_key = st.text_input("API kulcs", type="password")
 
-if st.button("Lekérdezés"):
+if st.button("Kötelező mezők kitöltöttségének lekérdezése"):
     df = kitoltottseg(api_key)
     st.dataframe(df)
 
