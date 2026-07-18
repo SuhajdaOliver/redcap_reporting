@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from redcap_api import kitoltottseg
 
 st.title("API lekérdező")
 
