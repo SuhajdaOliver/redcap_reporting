@@ -158,7 +158,7 @@ def kitoltottseg_havi(token, url="https://redcap.onkobank.com/redcap/api/"):
 
     completion = completion.merge(first_completion[["record_id", "form_name", "completion_month"]], on=["record_id", "form_name"], how="left")
 
-    summary = (completion.groupby(["redcap_data_access_group", "completion_month", "form_name"])
+    summary = (completion.groupby(["completion_month", "redcap_data_access_group", "form_name"])
     .agg(records=("record_id", "count"), filled_required=("filled_required", "sum"), total_required=("total_required", "sum"))
     .reset_index()
     )
