@@ -168,7 +168,7 @@ def kitoltottseg_havi(token, url="https://redcap.onkobank.com/redcap/api/"):
     return summary
 
 
-def kitoltottseg_havi_felvetel(token, url="https://redcap.onkobank.com/redcap/api/"):
+def kitoltottseg_felvetel_havi(token, url="https://redcap.onkobank.com/redcap/api/"):
 
     data = {
         "token": token,
