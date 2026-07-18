@@ -69,10 +69,6 @@ def kitoltottseg(token, url="https://redcap.onkobank.com/redcap/api/"):
     return summary
 
 
-import requests
-import pandas as pd
-
-
 def kitoltottseg_havi(token, url="https://redcap.onkobank.com/redcap/api/"):
 
     data = {
