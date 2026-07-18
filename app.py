@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 from redcap_api import kitoltottseg, kitoltottseg_havi, kitoltottseg_havi_felvetel
 
 st.title("Redcap reporting")
